@@ -218,3 +218,57 @@ textarea:focus {
   }
 }
     
+
+
+/* === BUTTON HOVER === */
+button {
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+  background: linear-gradient(135deg, #ff5722, #e94560);
+}
+
+/* === INPUT & SELECT HOVER === */
+input[type="text"]:hover,
+select:hover {
+  border-color: #ffa726;
+  background-color: #223d6b;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.3);
+}
+
+/* === FORM & RESULT CONTAINER HOVER === */
+.form:hover, .result:hover {
+  box-shadow: 0 0 20px rgba(255, 87, 34, 0.2), 0 4px 20px rgba(0,0,0,0.4);
+  transform: scale(1.005);
+  transition: all 0.3s ease;
+}
+
+/* === ANIMATED PLACEHOLDER === */
+input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* === COPY FEEDBACK FADE === */
+.copy-feedback {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.copy-feedback.show {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* === NEON GLOW EFFECT FOR HEADERS === */
+h1 {
+  text-shadow: 0 0 10px rgba(233, 69, 96, 0.6), 0 0 20px rgba(255, 87, 34, 0.4);
+}
+
+h2 {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
